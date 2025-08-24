@@ -1,32 +1,8 @@
-# Clapeyra Serverless
+ENV only. Deploy with Vercel.
 
-Complete energy audit website with serverless backend on Vercel.
+Set env: EMAIL_USER, EMAIL_PASSWORD, EMAIL_RECEIVER.
 
-## 🚀 One-Click Deploy to Vercel
-
-Deploy this complete website instantly with Vercel! This button will:
-- ✅ **Deploy frontend** (HTML, CSS, JS, images)
-- ✅ **Deploy serverless function** (email handling)
-- ✅ **Prompt for environment variables** (your email settings)
-- ✅ **Give you a live website** instantly!
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAhmedBenAbdallahDev%2Fclapeyra-serverless&env=EMAIL_USER,EMAIL_PASSWORD,EMAIL_RECEIVER&envDescription=Gmail%20SMTP%20credentials%20for%20contact%20form&envLink=https%3A%2F%2Fsupport.google.com%2Faccounts%2Fanswer%2F185833)
-
-### 📝 You'll be prompted to enter:
-- **EMAIL_USER**: `your-gmail@gmail.com` (your Gmail address)
-- **EMAIL_PASSWORD**: `your-app-password` (Gmail app password)
-- **EMAIL_RECEIVER**: `contact@yourdomain.com` (where to receive forms)
-
-*After deployment, your website will be live at `your-project.vercel.app`*
-
----
-
-## Architecture
-
-- **Frontend**: Static HTML/CSS/JS site
-- **Backend**: Vercel serverless function (`/api/send`)
-- **Email**: Gmail SMTP via Nodemailer
-- **Hosting**: Vercel (frontend + serverless functions)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FAhmedBenAbdallahDev%2Fclapeyra-serverless&env=EMAIL_USER,EMAIL_PASSWORD,EMAIL_RECEIVER&envDescription=Gmail%20SMTP%20credentials)
 
 ## Local Development
 
