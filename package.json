@@ -1,0 +1,16 @@
+{
+  "name": "clapeyra-serverless",
+  "version": "1.0.0",
+  "description": "Clapeyra - Serverless website with Vercel functions",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build needed for static site'",
+    "deploy": "vercel"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.8"
+  },
+  "devDependencies": {
+    "@vercel/node": "^3.0.0"
+  }
+}

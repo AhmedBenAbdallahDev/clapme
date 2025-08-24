@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>CLAPEYRA - Votre expert en audit énergétique</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Chargement...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 px-lg-4 bg-light py-2 d-none d-lg-block">
+            <div class="container">
+                <div class="row gx-0 align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <div class="border-end border-primary pe-3">
+                                <a href="#" class="text-muted small"><i class="fas fa-map-marker-alt text-primary me-2"></i>Trouver un emplacement</a>
+                            </div>
+                            <div class="ps-3">
+                                <a href="mailto:contact@clapeyra.f" class="text-muted small"><i class="fas fa-envelope text-primary me-2"></i>contact@clapeyra.fr</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex justify-content-end">
+                            <div class="d-flex border-primary pe-3">
+                                <!-- add "border-end" to this div's claas if you want add language item or another thing-->
+                                <a class="btn p-0 text-primary me-3" href="https://www.facebook.com/share/1DyaqERTcX/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn p-0 text-primary me-0" href="https://www.linkedin.com/company/clapeyra/"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid nav-bar px-0 px-lg-4 py-lg-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light"> 
+                    <a href="#" class="navbar-brand p-0">
+                        <h1 class="text-primary mb-0"><img src="img/logoFr.png" width="60" height="69" alt="Icon"> Clapeyra</h1>
+                        <!-- <img src="img/logo.png" alt="Logo"> -->
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav mx-0 mx-lg-auto">
+                            <a href="index.html" class="nav-item nav-link active">Acceuil</a>
+                            <a href="#services" class="nav-item nav-link">Services</a>
+                            <a href="#apropos" class="nav-item nav-link">À propos</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-flex flex-shrink-0 ps-4">
+                        <a href="tel:+33 7 44 93 47 07" class="btn btn-light btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                            <i class="fa fa-phone-alt fa-2x"></i>
+                            <div class="position-absolute" style="top: 7px; right: 12px;">
+                                <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                            </div>
+                        </a>
+                        <div class="d-flex flex-column ms-3">
+                            <span class="text-white">Appelez nos experts</span>
+                            <a href="tel:+33 7 44 93 47 07"><span class="text-dark">+33 7 44 93 47 07</span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item ">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-lg-7 animated fadeInLeft">
+                                <div class="text-sm-center text-md-start ">
+                                    <h4 class="text-black text-uppercase fw-bold mb-4">Bienvenue chez Clapeyra</h4>
+                                    <h1 class="display-1 text-black mb-4">Votre expert en audit énergétique</h1>
+                                    <p class="mb-5 fs-5">Chez Clapeyra, nous sommes bien plus qu’un bureau d’études : nous sommes des experts engagés dans la performance énergétique et la transition environnementale.
+                                    </p>
+                                    <div class="d-flex justify-content-center justify-content-md-start flex-shrink-0 mb-4">
+                                        <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" id="devis-btn">Demander un devis</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 animated fadeInRight">
+                                <div class="calrousel-img" style="object-fit: cover;">
+                                    <img src="img/8.jpg" class="img-fluid w-100" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-carousel-item bg-primary">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row gy-4 gy-lg-0 gx-0 gx-lg-5 align-items-center">
+                            <div class="col-lg-5 animated fadeInLeft">
+                                <div class="calrousel-img">
+                                    <img src="img/9.jpg" class="img-fluid w-100" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7 animated fadeInRight">
+                                <div class="text-sm-center text-md-end">
+                                    <h4 class="text-black text-uppercase fw-bold mb-4">Bienvenue chez Clapeyra</h4>
+                                    <h1 class="display-1 text-black mb-4">Améliorer la performance énergétique.</h1>
+                                    <p class="mb-5 fs-5">Forts de notre expérience terrain et de notre maîtrise de l’ensemble des maillons de la chaîne, nous vous accompagnons de manière rigoureuse à chaque étape de votre projet.
+                                    </p>
+                                    <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                        <a class="btn btn-dark rounded-pill py-3 px-4 px-md-5 ms-2" id="devis-btn-audit">Demander un audit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+        <!-- Toast Form Container -->
+        <div id="devis-toast" class="toast-form-container">
+            <div class="toast-form-content">
+                <button class="close-toast">&times;</button>
+                <h4>Demande</h4>
+                <p>Remplissez ce formulaire pour recevoir une réponse à votre demande.</p>
+                
+                <div id="toast-notification" class="notification hidden">
+                <span id="toast-notification-message"></span>
+                </div>
+                
+                <form id="devis-form">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="7be9e9e9-b321-480b-a96e-5efa35031ef0">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" id="name" placeholder="Nom" name="name" required>
+                                <label for="name">Nom et prénom</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control border-0" id="email" placeholder="Email" name="email" required>
+                                <label for="email">E-mail</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="phone" class="form-control border-0" id="phone" placeholder="Téléphone" name="phone">
+                                <label for="phone">Numéro de téléphone</label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-xl-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control border-0" id="Adresse" placeholder="Adresse" name="Adresse">
+                                <label for="Adresse">Adresse/Région</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <select class="form-control border-0" id="type" placeholder="Vous êtes" name="type">
+                                    <option value="Personne">Veuillez sélectionner</option>
+                                    <option value="particulier">Un particulier</option>
+                                    <option value="représentant de copropriété">Un représentant de copropriété</option>
+                                    <option value="professionnel du bâtiment">Un professionnel du bâtiment</option>
+                                    <option value="collectivité ou organisme">Une collectivité ou organisme public</option>
+                                </select>
+                                <label for="subject">Vous êtes</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control border-0" placeholder="Leave a message here" id="message" style="height: 120px" name="message" required></textarea>
+                                <label for="message">Merci d'indiquer votre besoin</label>
+                            </div>
+
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary w-100 py-3">Nous contacter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Toast Form Container End-->
+        <!-- Feature Start -->
+        <div class="container-fluid feature bg-light py-5" id="services">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Nos Services</h4>
+                    <h1 class="display-4 mb-4">Votre sérénité énergétique</h1>
+                    <p class="mb-0">Les services de Clapeyra renforcent son engagement en faveur d’une transition énergétique accessible, transparente et efficace.
+                    </p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="far fa-handshake fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4"> Sensibilisation </h4>
+                            <p class="mb-4"><i class="fa fa-check me-3"></i>Informations et conseils sur les enjeux de la performance énergétique.</p>
+                            <p class="mb-4"><i class="fa fa-check me-3"></i>Ateliers et supports pédagogiques pour comprendre les économies d’énergie et les solutions de rénovation.</p>
+                            <div class="btn btn-primary rounded-pill py-2 px-4"  id="devis-btn-aud">Demander un audit</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-home fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Formation et Accompagnement Personnalisé</h4>
+                            <p class="mb-4"><i class="fa fa-check me-3"></i>Sessions adaptées aux particuliers, professionnels et copropriétés.</p>
+                            <p class="mb-4"><i class="fa fa-check me-3"></i> Conseils sur mesure pour prioriser les travaux et optimiser les aides financières.</p>
+                            <div class="btn btn-primary rounded-pill py-2 px-4" id="devis-btn-dev">Demander un devis</div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4 pt-0">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fa fa-bullseye fa-3x"></i>
+                            </div>
+                            <h4 class="mb-4">Mon Accompagnateur Renov</h4>
+                            <br/>
+                            <p class="mb-4"><i class="fa fa-check me-3"></i>Guidance officielle agréée tout au long du projet de rénovation.</p>
+                            <p class="mb-4"><i class="fa fa-check me-3"></i>Aide au montage des dossiers de subventions (MaPrimeRénov’, CEE, etc.).</p>
+                            <div class="btn btn-primary rounded-pill py-2 px-4" id="devis-btn-off">Découvrire l'offre</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+        <!-- About Start -->
+        <div class="container-fluid bg-light about pb-5" id="apropos">
+            <div class="container pb-5">
+                <div class="row g-5">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="about-item-content bg-white rounded p-5 h-100">
+                            <h4 class="text-primary">À propos de notre entreprise</h4>
+                            <h1 class="display-4 mb-4">Votre expert en audit énergétique</h1>
+                            <p>Nous réalisons des audits énergétiques complets et conformes à la réglementation, adaptés aussi bien aux bâtiments résidentiels, tertiaires qu’industriels. Notre savoir-faire technique s’appuie sur des outils professionnels reconnus et des méthodologies certifiées.
+                            </p>
+                            <p>Avec Clapeyra, vous bénéficiez d’un accompagnement de proximité, fondé sur :
+                            </p>
+                            <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>La confiance.</p>
+                            <p class="text-dark"><i class="fa fa-check text-primary me-3"></i>L’écoute</p>
+                            <p class="text-dark mb-4"><i class="fa fa-check text-primary me-3"></i>Un engagement sincère pour des solutions durables.</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-white rounded p-5 h-100">
+                            <div class="row g-4 justify-content-center">
+                                <div class="col-12">
+                                    <div class="rounded bg-light">
+                                        <img src="img/about-1.png" class="img-fluid rounded w-100" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">100</span>
+                                            <span class="h3 fw-bold text-primary">%</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Experts certifiés</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">30</span>
+                                            <span class="h3 fw-bold text-primary">%</span>
+
+                                        </div>
+                                        <h4 class="mb-0 text-dark">D’économies d’énergie</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">100</span>
+                                            <span class="h3 fw-bold text-primary">%</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">Accompagnement personnalisé</h4>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="counter-item bg-light rounded p-3 h-100">
+                                        <div class="counter-counting">
+                                            <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">95</span>
+                                            <span class="h3 fw-bold text-primary">%</span>
+                                        </div>
+                                        <h4 class="mb-0 text-dark">De satisfaction client</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Service Start -->
+        <div class="container-fluid service py-5" id="objectif">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Notre objectif </h4>
+                    <h1 class="display-4 mb-4">Notre mission </h1>
+                    <p class="mb-0">Va bien au-delà d’un simple diagnostic technique. Nous sommes à vos côtés pour vous aider à faire les bons choix, en toute confiance, et vous guider dans chaque étape de votre projet de rénovation énergétique.
+                    </p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/1.jpg" class="img-fluid rounded-top w-100" width="500" height="1000" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-bolt fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <div class="d-inline-block h4 mb-4">Réduire vos consommations d’énergie</div>
+                                    <p class="mb-4">Grâce à des recommandations sur mesure, réalistes et efficaces.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/2.png" class="img-fluid rounded-top w-100" width="500" height="1000" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-thermometer-half fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <div class="d-inline-block h4 mb-4">Améliorer votre confort thermique et votre qualité de vie</div>
+                                    <p class="mb-4">Eté comme hiver, en adaptant les solutions à vos besoins.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/4.jpg" class="img-fluid rounded-top w-100" width="500" height="1000" alt="">
+                                <div class="service-icon p-3">
+                                    <i class="fa fa-chart-line fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="service-content p-4">
+                                <div class="service-content-inner">
+                                    <div class="d-inline-block h4 mb-4">Valoriser durablement votre bien immobilier</div>
+                                    <p class="mb-4">Tout en respectant les exigences environnementales actuelles.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- FAQs Start -->
+        <div class="container-fluid faq-section bg-light py-5" id="faq">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="h-100">
+                            <div class="mb-5">
+                                <h4 class="text-primary">Quelques QFP importantes</h4>
+                                <h1 class="display-4 mb-0">Quelques questions fréquemment posées importantes</h1>
+                            </div>
+                            <div class="accordion" id="accordionExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Q: Quel est la différence entre un DPE et un audit énergétique ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show active" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body rounded">
+                                            R: Le DPE (Diagnostic de Performance Énergétique) est une évaluation simplifiée (obligatoire pour la vente/location) qui classe votre logement de A à G.<br/>
+                                            L’audit énergétique est une analyse approfondie (obligatoire pour les logements F/G avant vente) proposant des scénarios de travaux chiffrés, des gains énergétiques et les aides disponibles.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Q: Comment prioriser mes travaux pour des économies maximales ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            R:  1.Isolation (toiture, murs, fenêtres) → Économies immédiates.<br/>
+
+                                                2.Système de chauffage (pompe à chaleur, chaudière performante).<br/>
+
+                                                3.Ventilation (pour éviter l’humidité et les déperditions).<br/>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Q: Comment trouver des artisans fiables pour mes travaux ?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            R: Nous vous orientons vers des professionnels labellisés RGE, indispensables pour obtenir les aides. Nous pouvons aussi superviser le chantier pour garantir la qualité.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.4s">
+                        <img src="img/7.jpg" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQs End -->
+
+        <!--
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+                    <h1 class="display-4 mb-4">Ce que disent nos clients</h1>
+                    <p class="mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur adipisci facilis cupiditate recusandae aperiam temporibus corporis itaque quis facere, numquam, ad culpa deserunt sint dolorem autem obcaecati, ipsam mollitia hic.
+                    </p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/testimonial-1.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Client Name</h4>
+                                    <p class="mb-3">Profession</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/testimonial-2.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Client Name</h4>
+                                    <p class="mb-3">Profession</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded">
+                        <div class="row g-0">
+                            <div class="col-4  col-lg-4 col-xl-3">
+                                <div class="h-100">
+                                    <img src="img/testimonial-3.jpg" class="img-fluid h-100 rounded" style="object-fit: cover;" alt="">
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-8 col-xl-9">
+                                <div class="d-flex flex-column my-auto text-start p-4">
+                                    <h4 class="text-dark mb-0">Client Name</h4>
+                                    <p class="mb-3">Profession</p>
+                                    <div class="d-flex text-primary mb-3">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                        <i class="fas fa-star text-body"></i>
+                                    </div>
+                                    <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim error molestiae aut modi corrupti fugit eaque rem nulla incidunt temporibus quisquam,
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        Testimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-xl-12">
+                        <div class="mb-5">
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-6 col-xl-5">
+                                    <div class="footer-item">
+                                        <a href="index.html" class="p-0">
+                                            <h3 class="text-white"><img src="img/logoFr.png" width="67" height="63" alt="Icon"> Clapeyra</h3>
+                                            <!-- <img src="img/logo.png" alt="Logo"> -->
+                                        </a>
+                                        <p class="text-white mb-4">Clapeyra intervient partout en France, avec un engagement constant envers la transparence et l'efficacité.</p>
+                                        <div class="footer-btn d-flex">
+                                            <a class="btn btn-md-square rounded-circle me-3" href="https://www.facebook.com/share/1DyaqERTcX/"><i class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-3" href="#"><i class="fab fa-instagram"></i></a>
+                                            <a class="btn btn-md-square rounded-circle me-0" href="https://www.linkedin.com/company/clapeyra/"><i class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-3">
+                                    <div class="footer-item">
+                                        <h4 class="text-white mb-4">Liens utiles</h4>
+                                        <a href="index.html#apropos"><i class="fas fa-angle-right me-2"></i> À propos de nous</a>
+                                        <a href="index.html#services"><i class="fas fa-angle-right me-2"></i> Nos Services</a>
+                                        <a href="index.html#objectif"><i class="fas fa-angle-right me-2"></i> Notre objectif</a>
+                                        <a href="index.html#faq"><i class="fas fa-angle-right me-2"></i> FAQ's</a>
+                                        <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-4">
+                                    <div class="footer-item">
+                
+                                        <div class="d-flex flex-shrink-0">
+                                            <div class="footer-btn">
+                                                <a href="" class="btn btn-lg-square rounded-circle position-relative wow tada" data-wow-delay=".9s">
+                                                    <i class="fa fa-phone-alt fa-2x"></i>
+                                                    <div class="position-absolute" style="top: 2px; right: 12px;">
+                                                        <span><i class="fa fa-comment-dots text-secondary"></i></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="d-flex flex-column ms-3 flex-shrink-0">
+                                                <span>Appelez nos experts</span>
+                                                <a href="tel:+33 7 44 93 47 07"><span class="text-white">+33 7 44 93 47 07</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-5" style="border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                            <div class="row g-0">
+                                <div class="col-12">
+                                    <div class="row g-4">
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                    <i class="fas fa-map-marker-alt fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Adresse</h4>
+                                                    <p class="mb-0">15 rue rosa parks 94400 Vitry-sur-Seine, France</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                    <i class="fas fa-envelope fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Envoyez-nous un e-mail</h4>
+                                                    <p class="mb-0">contact@clapeyra.fr</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-xl-4">
+                                            <div class="d-flex">
+                                                <div class="btn-xl-square bg-primary text-white rounded p-4 me-4">
+                                                    <i class="fa fa-phone-alt fa-2x"></i>
+                                                </div>
+                                                <div>
+                                                    <h4 class="text-white">Téléphone</h4>
+                                                    <p class="mb-0">+33 7 44 93 47 07</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            // Get elements
+            const devisBtns = document.querySelectorAll('[id^="devis-btn"]');
+            const toastForm = document.getElementById('devis-toast');
+            const closeToast = document.querySelector('.close-toast');
+            const devisForm = document.getElementById('devis-form');
+            
+            // Show toast when "Demande de devis" is clicked
+            // Add click event to all devis buttons
+            devisBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                toastForm.classList.add('show');
+                });
+            });
+            
+            // Close toast when X is clicked
+            closeToast.addEventListener('click', function() {
+                toastForm.classList.remove('show');
+            });
+            
+            // Close when clicking outside the form
+            document.addEventListener('click', function(e) {
+                if (!toastForm.contains(e.target) && 
+                    !Array.from(devisBtns).some(btn => btn.contains(e.target))) {
+                toastForm.classList.remove('show');
+                }
+            });
+            
+            // Form submission
+            devisForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                
+                const submitBtn = this.querySelector('button[type="submit"]');
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Envoi en cours...';
+                
+                try {
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData.entries());
+                
+                const response = await fetch('/api/send', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({...data, isDevis: true})
+                });
+                
+                const result = await response.json();
+                
+                // Show notification
+                const notification = document.getElementById('toast-notification');
+                const notificationMsg = document.getElementById('toast-notification-message');
+                
+                notification.className = 'notification ' + (result.success ? 'success' : 'error');
+                notificationMsg.textContent = result.message || 
+                    (result.success ? 'Demande envoyée!' : 'Erreur lors de l\'envoi');
+                notification.style.display = 'block';
+                
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                    if (result.success) {
+                    this.reset();
+                    toastForm.classList.remove('show');
+                    }
+                }, 3000);
+                
+                } catch (error) {
+                console.error('Error:', error);
+                } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Envoyer la demande';
+                }
+            });
+        });
+        </script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
