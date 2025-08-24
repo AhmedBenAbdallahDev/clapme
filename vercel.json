@@ -4,10 +4,5 @@
     "api/send.js": {
       "maxDuration": 30
     }
-  },
-  "env": {
-    "EMAIL_USER": "@email_user",
-    "EMAIL_PASSWORD": "@email_password", 
-    "EMAIL_RECEIVER": "@email_receiver"
   }
 }
