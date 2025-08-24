@@ -1,7 +1,10 @@
 const nodemailer = require('nodemailer');
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   try {
+    console.log('Function started, method:', req.method);
+    console.log('Environment check - EMAIL_USER:', process.env.EMAIL_USER ? 'Set' : 'Missing');
+    
     // Set CORS headers
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
