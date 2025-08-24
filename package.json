@@ -2,6 +2,7 @@
   "name": "clapeyra-serverless",
   "version": "1.0.0",
   "description": "Clapeyra - Serverless website with Vercel functions",
+  "type": "commonjs",
   "scripts": {
     "dev": "vercel dev",
     "deploy": "vercel"
