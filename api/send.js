@@ -3,7 +3,7 @@ const nodemailer = require('nodemailer');
 module.exports = async function handler(req, res) {
   try {
     console.log('Function started, method:', req.method);
-    console.log('Environment check - EMAIL_USER:', process.env.EMAIL_USER ? 'Set' : 'Missing');
+    console.log('Environment check - Email_User:', process.env.Email_User ? 'Set' : 'Missing');
     
     // Set CORS headers
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -30,19 +30,19 @@ module.exports = async function handler(req, res) {
       });
     }
 
-    // Create email transporter
-    const transporter = nodemailer.createTransporter({
+    // Create email transporter (using EXACT same config as working backend)
+    const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASSWORD,
+        user: process.env.Email_User,
+        pass: process.env.Email_Password,
       },
     });
 
-    // Email content
+    // Email content (EXACT same as working backend)
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_RECEIVER,
+      from: process.env.Email_User,
+      to: process.env.Email_Receiver,
       subject: isDevis 
         ? `Demande de devis de ${name || 'Anonymous'}` 
         : `Message de contact de ${name || 'Anonymous'}`,
