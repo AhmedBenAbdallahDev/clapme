@@ -4,7 +4,6 @@
   "description": "Clapeyra - Serverless website with Vercel functions",
   "scripts": {
     "dev": "vercel dev",
-    "build": "echo 'No build needed for static site'",
     "deploy": "vercel"
   },
   "dependencies": {
