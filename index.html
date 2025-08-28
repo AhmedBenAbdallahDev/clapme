@@ -727,24 +727,60 @@
                 const notification = document.getElementById('toast-notification');
                 const notificationMsg = document.getElementById('toast-notification-message');
                 
-                notification.className = 'notification ' + (result.success ? 'success' : 'error');
+                if (result.success) {
+                    notification.className = 'notification success';
+                    notification.style.backgroundColor = '#d4edda';
+                    notification.style.color = '#155724';
+                    notification.style.border = '1px solid #c3e6cb';
+                } else {
+                    notification.className = 'notification error';
+                    notification.style.backgroundColor = '#f8d7da';
+                    notification.style.color = '#721c24';
+                    notification.style.border = '1px solid #f5c6cb';
+                }
+                notification.style.padding = '10px';
+                notification.style.borderRadius = '5px';
+                notification.style.marginBottom = '15px';
+                notification.style.fontWeight = 'bold';
+                
                 notificationMsg.textContent = result.message || 
-                    (result.success ? 'Demande envoyée!' : 'Erreur lors de l\'envoi');
+                    (result.success ? 'Message envoyé avec succès!' : 'Erreur lors de l\'envoi');
+                notification.classList.remove('hidden');
                 notification.style.display = 'block';
                 
                 setTimeout(() => {
                     notification.style.display = 'none';
+                    notification.classList.add('hidden');
                     if (result.success) {
-                    this.reset();
-                    toastForm.classList.remove('show');
+                        this.reset();
+                        toastForm.classList.remove('show');
                     }
-                }, 3000);
+                }, 4000);
                 
                 } catch (error) {
                 console.error('Error:', error);
+                // Show error notification
+                const notification = document.getElementById('toast-notification');
+                const notificationMsg = document.getElementById('toast-notification-message');
+                notification.className = 'notification error';
+                notification.style.backgroundColor = '#f8d7da';
+                notification.style.color = '#721c24';
+                notification.style.border = '1px solid #f5c6cb';
+                notification.style.padding = '10px';
+                notification.style.borderRadius = '5px';
+                notification.style.marginBottom = '15px';
+                notification.style.fontWeight = 'bold';
+                notificationMsg.textContent = 'Erreur lors de l\'envoi du message';
+                notification.classList.remove('hidden');
+                notification.style.display = 'block';
+                
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                    notification.classList.add('hidden');
+                }, 4000);
                 } finally {
                 submitBtn.disabled = false;
-                submitBtn.textContent = 'Envoyer la demande';
+                submitBtn.textContent = 'Nous contacter';
                 }
             });
         });
