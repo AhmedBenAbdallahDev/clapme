@@ -8,9 +8,9 @@
 ## Environment Variables
 
 Required in Vercel dashboard:
-- `Email_User=your-email@gmail.com`
-- `Email_Password=your-app-password`
-- `Email_Receiver=contact@yourdomain.com`
+- `Email_User=clapeyras@gmail.com`
+- `Email_Password=cckekiftyaalvign`
+- `Email_Receiver=clapeyras@gmail.com`
 
 ## API Endpoint
 
